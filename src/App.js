@@ -11,6 +11,10 @@ function App() {
           <div className='col'>
           <Data/>
           <Data/>
+          <Data/>
+          <Data/>
+          <Data/>
+          <Data/>
           </div>
         </div>
       </section>
