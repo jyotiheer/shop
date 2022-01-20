@@ -1,5 +1,81 @@
 .App {
   text-align: center;
+  
+}
+
+.active {
+  width: 30px;
+}
+
+.inactive {
+  width: 30px;
+}
+
+.wrapper{
+  width: 70%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 30px;
+}
+
+.main{
+  background-color: #9399a5;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.icon{
+  height: 30px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.info{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.post-image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.post-content{
+  width: 100%;
+  padding: 20px;
+}
+
+.description{
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+  width: 95%;
+}
+
+.description span{
+  font-weight: bold;
+  margin-right: 10px;
+}
+.post{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 10px solid #dfdfdf;
+  margin-top: 40px;
 }
 
 .App-logo {
@@ -14,8 +90,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #9399a5;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
