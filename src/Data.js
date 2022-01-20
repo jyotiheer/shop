@@ -9,7 +9,7 @@ import ToggleImages from "./components/ToggleImages.js";
 
 
 const Data = () => {
-    const url = "https://api.nasa.gov/planetary/apod?api_key=uiwXaZImj01qERBtIXpPvs8ZYR7GcvVuBmtVAUFP"
+    const url = "https://api.nasa.gov/planetary/apod?api_key=uiwXaZImj01qERBtIXpPvs8ZYR7GcvVuBmtVAUFP&count=10"
     const [info, setInfo] = useState(null)
 
     useEffect(() => {
@@ -31,14 +31,14 @@ const Data = () => {
     if(info){
         return (
         <div className='post'>
-            <img src={info.url} className='post-image' alt='' ></img>
+            <img src={info[0].url} className='post-image' alt='' ></img>
                 <div className='post-content'>
                     <div className='reaction-wrapper'>
                         <ToggleImages active={active} handleChangeActive={handleChangeActive} />
                     </div>
-                    <h1 className='likes'>{info.title}</h1>
-                    <p className='description'>{info.explanation}</p>
-                    <p className='post-time'>{info.date}</p>
+                    <h1 className='likes'>{info[0].title}</h1>
+                    <p className='description'>{info[0].explanation}</p>
+                    <p className='post-time'>{info[0].date}</p>
                 </div>
         </div>
                     
